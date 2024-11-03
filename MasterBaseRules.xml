@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html [
+
+<!ENTITY nbsp "&#160;"> 
+]>
+<!-- MasterBaseRules.xml -->
+<clauses clpercentage="">
+  <clause id="cls.1" name="Global" type="rule" allowed="YES" execution="PRE,CLA">
+    <coverage id="cvg.1.1" coverageid="123" name="Any coverage" allowed="3" module="P" clpercentage="" selected="YES" autoselect="">
+      <condition id="cnd.1.1.1" field="member.inceptiondate" op="LE" opType="date" value="" module="P" dynValue="check_global_rule(&apos;INC&apos;)" clfactor="10" mandatory="" method="MEMBER.INCEPTION_DATE" source="TABLE" fieldData="" unit="" result="">
+        <display id="dsp.1.1.1.1" target="" prelabel="Member inception date" control="" type="" default="" postlabel="admission date" jscall=""/>
+      </condition>
+      <condition id="cnd.1.1.2" field="policy.startdate" op="LE" opType="date" value="" module="P" dynValue="check_global_rule(&apos;STD&apos;)" clfactor="10" mandatory="" method="MEMBER.EFFECTIVE_FROM_DATE" source="TABLE" fieldData="" unit="" result="">
+        <display id="dsp.1.1.2.1" target="" prelabel="Policy start date" control="" type="" default="" postlabel="admission date" jscall=""/>
+      </condition>      <action id="act.1.1.1" name="ruleengineaction"/>
+    </coverage>
+  </clause>
+
+  
+  
+</clauses>

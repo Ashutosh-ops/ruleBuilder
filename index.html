@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="dropzone">
+        <div id="draggable" 
+            draggable="true"  
+            ondragstart=myDragStartFun(event) 
+            ondragend=myDragEndFun(event)
+            ondrag=myDragFun(event)>
+            This div is draggable
+        </div>
+    </div>
+
+    <div class="dropzone" id="drop-target" ondrop=myFunction(event)></div>
+    <h2 id="1">One</h2>
+    <div class="dropzone" id="drop-target2" ondrop=myFunction(event)></div>
+    <h2 id="2">Two</h2>
+    <div class="dropzone" id="drop-target3" ondrop=myFunction(event)></div>
+    <h2 id="3">Three</h2>
+
+</body>
+</html>

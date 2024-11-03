@@ -1,0 +1,179 @@
+[
+    {
+      "attributes": {
+        "type": "Clause__c",
+        "url": "/services/data/v61.0/sobjects/Clause__c/a09WU000003iA3ZYAU"
+      },
+      "u_id__c": "cls.10",
+      "Name": "In-Patient",
+      "allowed__c": "NO",
+      "type__c": "rule",
+      "execution__c": "PRE,CLA",
+      "Coverages__r": {
+        "totalSize": 2,
+        "done": true,
+        "records": [
+          {
+            "attributes": {
+              "type": "Coverage__c",
+              "url": "/services/data/v61.0/sobjects/Coverage__c/a08WU000008Jb7fYAC"
+            },
+            "u_id__c": "cvg.10.5",
+            "allowed__c": "~",
+            "module__c": "P",
+            "clpercentage__c": null,
+            "selected__c": "YES",
+            "autoselect__c": "A|35|A|3|A|36",
+            "Displays__r": {
+              "totalSize": 1,
+              "done": true,
+              "records": [
+                {
+                  "attributes": {
+                    "type": "Display__c",
+                    "url": "/services/data/v61.0/sobjects/Display__c/a06WU000006sRUPYA2"
+                  },
+                  "u_id__c": "dsp.10.5.1",
+                  "target__c": "allowed,1",
+                  "prelabel__c": null,
+                  "control__c": "radiogroup",
+                  "type__c": "single",
+                  "default__c": "2",
+                  "optText__c": "Pay,Don't Pay,Pay Conditionally",
+                  "altText__c": "Pay,Don't Pay,Pay Conditionally",
+                  "optVal__c": "1,2,3",
+                  "postlabel__c": null,
+                  "jscall__c": "onclick=showHideCondition(this)"
+                }
+              ]
+            },
+            "Conditions__r": {
+              "totalSize": 2,
+              "done": true,
+              "records": [
+                {
+                  "attributes": {
+                    "type": "Condition__c",
+                    "url": "/services/data/v61.0/sobjects/Condition__c/a07WU000009uXM7YAM"
+                  },
+                  "u_id__c": "cnd.10.5.1",
+                  "field__c": "gc2",
+                  "op__c": null,
+                  "opType__c": null,
+                  "value__c": null,
+                  "dynValue__c": "check_ip_op_limit('A|11000','~','~','~','~','~','~','~','~','~','~','~')",
+                  "clfactor__c": "10",
+                  "mandatory__c": null,
+                  "method__c": "get_request_state()",
+                  "source__c": "PACKAGE",
+                  "module__c": "P",
+                  "fieldData__c": null,
+                  "unit__c": null,
+                  "result__c": null,
+                  "configure__c": "NO",
+                  "Displays__r": {
+                    "totalSize": 2,
+                    "done": true,
+                    "records": [
+                      {
+                        "attributes": {
+                          "type": "Display__c",
+                          "url": "/services/data/v61.0/sobjects/Display__c/a06WU000006sbR3YAI"
+                        },
+                        "u_id__c": "dsp.10.5.1.1",
+                        "target__c": "dynValue,2",
+                        "prelabel__c": "Surgery charges Limit amount",
+                        "control__c": "select",
+                        "type__c": "single",
+                        "default__c": "LE",
+                        "optText__c": "<=",
+                        "altText__c": "LE",
+                        "optVal__c": "LE",
+                        "postlabel__c": null,
+                        "jscall__c": null
+                      },
+                      {
+                        "attributes": {
+                          "type": "Display__c",
+                          "url": "/services/data/v61.0/sobjects/Display__c/a06WU000006sUr0YAE"
+                        },
+                        "u_id__c": "dsp.10.5.1.5",
+                        "target__c": null,
+                        "prelabel__c": null,
+                        "control__c": "image",
+                        "type__c": "image",
+                        "default__c": null,
+                        "optText__c": null,
+                        "altText__c": null,
+                        "optVal__c": null,
+                        "postlabel__c": "and",
+                        "jscall__c": "onclick=openRadioList('dsp.10.5.1.4','CURRENCY_GROUP','option')"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "attributes": {
+                    "type": "Condition__c",
+                    "url": "/services/data/v61.0/sobjects/Condition__c/a07WU000009uX86YAE"
+                  },
+                  "u_id__c": "cnd.10.5.2",
+                  "field__c": "gc2",
+                  "op__c": null,
+                  "opType__c": null,
+                  "value__c": null,
+                  "dynValue__c": "check_ip_op_limit('A|01999','~','~','~','~','~','~','~','~','~','~','~')",
+                  "clfactor__c": "10",
+                  "mandatory__c": null,
+                  "method__c": "get_request_state()",
+                  "source__c": "PACKAGE",
+                  "module__c": "P",
+                  "fieldData__c": null,
+                  "unit__c": null,
+                  "result__c": null,
+                  "configure__c": "NO",
+                  "Displays__r": null
+                }
+              ]
+            }
+          },
+          {
+            "attributes": {
+              "type": "Coverage__c",
+              "url": "/services/data/v61.0/sobjects/Coverage__c/a08WU000008JiNMYA0"
+            },
+            "u_id__c": "cvg.10.15",
+            "allowed__c": "~",
+            "module__c": "P",
+            "clpercentage__c": null,
+            "selected__c": "YES",
+            "autoselect__c": "A|34",
+            "Displays__r": {
+              "totalSize": 1,
+              "done": true,
+              "records": [
+                {
+                  "attributes": {
+                    "type": "Display__c",
+                    "url": "/services/data/v61.0/sobjects/Display__c/a06WU000006sNziYAE"
+                  },
+                  "u_id__c": "dsp.10.15.1",
+                  "target__c": "allowed,1",
+                  "prelabel__c": null,
+                  "control__c": "radiogroup",
+                  "type__c": "single",
+                  "default__c": "2",
+                  "optText__c": "Pay,Don't Pay,Pay Conditionally",
+                  "altText__c": "Pay,Don't Pay,Pay Conditionally",
+                  "optVal__c": "1,2,3",
+                  "postlabel__c": null,
+                  "jscall__c": "onclick=showHideCondition(this)"
+                }
+              ]
+            },
+            "Conditions__r": null
+          }
+        ]
+      }
+    }
+  ]
